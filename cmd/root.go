@@ -31,8 +31,9 @@ var cfgFile string
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "unpm",
-	Short: "Usage: unpm <command>",
+	Use:     "unpm",
+	Aliases: []string{"unpm"},
+	Short:   "Usage: unpm <command>",
 	Long: `Usage: unpm <command>
 
 where <command> is one of:
